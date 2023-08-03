@@ -47,7 +47,7 @@ const slide = keyframes`
 }
 `;
 
-const texts = ['Frontend',  'React',  'HTML / CSS',  'Javascript',  'Typescript'];
+const texts = ['FullStack',  'React',  'HTML / CSS',  'Javascript',  'Typescript'];
 
 const TextSlider = () => (
   <div style={{width: "100%", overflow: "hidden"}}>
