@@ -1,0 +1,135 @@
+@import "../../scss/_variables";
+
+#contact {
+    margin-top: 3rem;
+    width: 100%;
+    height: fit-content;
+    background: $color-background-variant;
+    border-radius: 2rem;
+
+    @include media(tablet){
+        border-radius: 10rem;
+    }
+    
+    h2 {
+        text-align: center;
+
+        @media (min-width: 1024px)  and (min-height: 830px) {
+            font-size: 6rem;
+        }
+    }
+
+    h3 {
+        text-align: center;
+
+        @media (min-width: 1024px)  and (min-height: 830px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    h4,h5,a {
+        @media screen and (min-width: 1300px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    @include media(desktop){
+        margin-top: 3rem;
+        height: auto;
+    }
+}
+.container.contact__container {
+    width: 90%;
+    min-height: fit-content;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    padding-top: 3rem;
+    align-items: center;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.contact__option {
+    background: $color-primary;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: $transition;
+    margin-bottom: 1rem;
+
+    &:hover {
+        background: transparent;
+        border-color: $color-primary-variant;
+    }
+    
+    &-icon {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+    
+    & a {
+        margin-top: .7rem;
+        display: inline-block;
+        font-size: .8rem;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    height: fit-content;
+
+    input,textarea {
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: .625rem;
+        background: transparent;
+        border: 2px solid $color-primary-variant;
+        resize: none;
+
+        @media (min-width: 1024px)  and (min-height: 830px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+}
+
+/* Media Query for tablet */
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        width: $container-width-md;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+    }
+    .contact__option {
+        padding: .2rem;
+    }
+    form {
+        gap: 1.2rem;
+    }
+    textarea {
+        height: 100px;
+    }
+}
+
+/* Media Query for mobile */
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: $container-width-sm;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}

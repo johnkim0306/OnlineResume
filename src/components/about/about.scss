@@ -1,0 +1,111 @@
+@import "../../scss/_variables";
+
+.about {
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    max-width: 1373px;
+    background-color: $color-background-variant;
+    box-sizing: border-box;
+    font-weight: 600;
+
+    &__container {
+        font-family: Arial, Helvetica, sans-serif;
+        //background-color: red;
+        position: relative;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        font-size: 12px;
+
+        &--info {
+            display: flex;
+            margin-bottom: .5rem;
+            background-color: rgb(57, 62, 70);
+            width: 100%;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            border-radius: 2rem;
+            border: 0.5rem solid rgb(238, 238, 238);
+            cursor: pointer;
+
+            @include media(tablet){
+                margin-bottom: 2rem;
+                padding: 0.8rem 2rem;
+            }
+
+            svg {
+                min-height: 100%;
+                width: 100%;
+            }
+
+            &:hover {
+                background-color: rgb(0, 173, 181);
+                //border-color: var(--secondary-color);
+            }
+        }
+
+        &--left {
+            width: 100%;
+            padding: 1rem;
+
+            @include media(tablet){
+                width: 50%;
+            }
+        }
+
+        &--right {
+            width: 100%;
+            padding: 1rem;
+
+            @include media(tablet){
+                width: 50%;
+                padding: 1rem;
+                overflow: auto;
+            }
+        }
+
+        @include media(mobile){
+            font-size: 1rem;
+        }
+
+        @include media(tablet, desktopHeight){
+            font-size: 1.25rem;
+        }
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        color: $color-white;
+        margin-right: 1rem;
+
+        @include media(tablet, desktopHeight){
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        color: $color-white;
+        font-size: .875rem;
+
+        @include media(tablet, desktopHeight){
+            font-size: 1rem;
+        }
+
+        &--value {
+            @media screen and (max-width: 1024px) {
+                word-break: break-all;
+            }
+        }
+    }
+}

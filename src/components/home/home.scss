@@ -1,0 +1,107 @@
+@import '../../scss/_variables';
+
+.home__container#home {
+    text-align: center;
+    position: relative;
+
+    /*
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(180deg,rgba(112,93,80,.8) 0,rgba(112,93,80,.8) 90%),url(../../assets/headerImage.jpeg) 50% no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+    */
+    & h5 {
+        font-size: 2rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: white;
+
+        @media screen and (min-width: 1024px) and (min-height: 830px) {
+            font-size: 3.5rem;
+        }
+    }
+
+    & h1 {
+        font-size: 4.5rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: white;
+
+        @media screen and (min-width: 1024px)  and (min-height: 830px) {
+            font-size: 6.5rem;
+        }
+    }
+
+    & hr {
+        width: 3.25rem;
+        height: 0;
+        margin-top: 1.5rem;
+        margin-bottom: .4rem;
+        border: none;
+        border-top: .2rem solid #f4623a;
+        opacity: 1;
+    }
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient($color-primary, #80caff);
+    width: 12rem;
+    height: 20rem;
+    margin-top: 1rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 5rem 4rem 5rem;
+
+    @media screen and (max-width: 300px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1024px)  and (min-height: 830px) {
+        width: 22rem;
+        height: 27rem;
+    }
+}
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+
+}
+
+.container {
+    &.home__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        min-height: 68vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        min-height: -webkit-fill-available;
+        min-height: 100vh;
+    }
+
+    .home__socials,
+    .scroll__down {
+        display: none;
+    }
+}
