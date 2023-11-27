@@ -38,7 +38,7 @@ const Container = styled.div`
     //background-color: #000;
     padding: 1rem 1rem;
     display: flex;
-    font-size: .6rem;
+    font-size: 1rem;
     flex-direction: column;
     &__content {
       padding-top: 5rem;
