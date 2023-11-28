@@ -151,6 +151,8 @@ const Container = styled.div`
     }
     .date {
       right: 0rem;
+      top: 0.25rem;
+      background: transparent;
     }
     .intro {
       color: #00f18c;
@@ -182,6 +184,8 @@ const Container = styled.div`
     }
     .date {
       right: 2rem;
+      top: 0.25rem;
+      background: transparent;
     }
     .intro {
       color: #2c3fe9;
