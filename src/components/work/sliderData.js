@@ -1,6 +1,17 @@
 const SliderData = [
     {
       id: "1",
+      icon: "./assets/Vitashop.jpg",
+      company: "Vitashop",
+      title: "Fullstack Developer Contractor",
+      date: "April 2023 - Present",
+      desc1: "Created a comprehensive website that seamlessly tracks customer information and the orders across all the B2B platforms. Automated the generation of invoices and product labels for enhanced efficiency.",
+      desc2: "Developed and implemented a custom PHP-based module to enhance functionality in the back office and improve user experience for the e-commerce website, leading to a 12% increase in daily active users.",
+      desc3: "Implemented new components using modern technologies such as Nest.js, Apollo, React TypeScript, GraphQL, and TypeORM to optimize data retrieval and manipulation.",
+      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+    },
+    {
+      id: "2",
       icon: "./assets/dotdash.webp",
       company: "Dotdash",
       title: "Fullstack Developer",
@@ -12,7 +23,7 @@ const SliderData = [
       img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     },
     {
-      id: "2",
+      id: "3",
       icon: "./assets/thales.png",
       company: "Thales",
       title: "Software Engineer Intern",
@@ -24,7 +35,7 @@ const SliderData = [
       img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
     {
-      id: "3",
+      id: "4",
       icon: "./assets/AI4Youth.webp",
       company: "Ai4YouthCanada",
       title: "Software Engineer Intern",
@@ -36,7 +47,7 @@ const SliderData = [
       img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
     },
     {
-        id: "4",
+        id: "5",
         icon: "./assets/uofc.jpeg",
         company: "University of Calgary",
         title: "Research Assistant",
