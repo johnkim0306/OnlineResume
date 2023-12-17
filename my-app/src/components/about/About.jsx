@@ -1,26 +1,24 @@
 import React from 'react'
 import { AppWrap } from "../../wrapper";
 import './about.scss'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect} from "react";
 import TextSlider from "./TextSlider";
 import ProgressBar from "./ProgressBar";
 import Intro from "./Intro";
-gsap.registerPlugin(ScrollTrigger);
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
     const imgRef = useRef(null);
     useEffect(() => {
-        const el = imgRef.current;
-        gsap.fromTo(el, {rotation: 0}, {rotation: 360, duration: 1, scrollTrigger: {
-            trigger: el
-        }})
-
+        AOS.init({
+            duration: 2000, 
+            disable: 'mobile'
+        });
     }, [])
 
     return (
-            <section className='about' ref={imgRef}>
+            <section className='about' data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-once="false" data-aos-mirror="true" ref={imgRef}>
                 <div className="container about__container">   
                     <TextSlider/>
                     <ProgressBar/>
