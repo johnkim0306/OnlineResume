@@ -1,5 +1,20 @@
 export const projects = [
 {
+    title: "CoinAI Trader",
+    date: "2024.03 ~ 2024.03",
+    skills: [
+    "Python",
+    "Docker",
+    "AWS"
+    ],
+    github: "github.com/johnkim0306/coinbaseTrader",
+    about: "Automate exeuction of coin trading using LLP Modeling with multiple APIS",
+    contents: [
+        "Developed an automated cryptocurrency trading system using Python, integrating with the Coinbase API for trade execution and leveraging Large Language Models (LLMs) for decision-making.",
+        "Orchestrated communication between the Coinbase API, AI language models via the OpenAI API, and AWS EC2 instance to facilitate trading decisions based on market data. Containerized the application with Docker."
+    ],
+},
+{
     title: "Covid React tracker",
     date: "2023.09 ~ 2023.10",
     skills: [
