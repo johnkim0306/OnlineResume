@@ -8,7 +8,7 @@
     border-radius: 2rem;
 
     @include media(tablet){
-        border-radius: 10rem;
+        border-radius: 27rem;
     }
     
     h2 {
@@ -47,7 +47,7 @@
     min-height: fit-content;
     display: grid;
     grid-template-columns: 30% 58%;
-    gap: 12%;
+    gap: 5%;
     padding-top: 3rem;
     align-items: center;
 }
