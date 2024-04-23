@@ -8,11 +8,13 @@
     border-radius: 2rem;
 
     @include media(tablet){
-        border-radius: 10rem;
+        border-radius: 27rem;
     }
     
     h2 {
         text-align: center;
+        font-size: 3rem;
+        color: #1e2b35;
 
         @media (min-width: 1024px)  and (min-height: 830px) {
             font-size: 6rem;
@@ -21,6 +23,8 @@
 
     h3 {
         text-align: center;
+        font-size: 3rem;
+        color: #1e2b35;
 
         @media (min-width: 1024px)  and (min-height: 830px) {
             font-size: 1.5rem;
@@ -43,7 +47,7 @@
     min-height: fit-content;
     display: grid;
     grid-template-columns: 30% 58%;
-    gap: 12%;
+    gap: 5%;
     padding-top: 3rem;
     align-items: center;
 }
