@@ -11,7 +11,7 @@ export const projects = [
     about: "Automate exeuction of coin trading using LLP Modeling with multiple APIS",
     contents: [
         "Developed an automated cryptocurrency trading system using Python, integrating with the Coinbase API for trade execution and leveraging Large Language Models (LLMs) for decision-making.",
-        "Orchestrated communication between the Coinbase API, AI language models via the OpenAI API, and AWS EC2 instance to facilitate trading decisions based on market data. Containerized the application with Docker."
+        "Implemented an AWS Lambda function to monitor an Amazon S3 bucket for new trading data files. Analyzes results and sends notifications via Amazon SNS upon detecting significant gains or losses, enabling proactive performance monitoring and optimization."
     ],
 },
 {
